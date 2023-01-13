@@ -1,0 +1,153 @@
+                                                  <!---CHAPTER 1 -->
+<!---In this chapter I have worked on different topic like:  title, div, image, table, paragraph, list, layout, class, style, link, filepath-->
+<!DOCTYPE html>
+<html>
+<!---this is the head tag I used it to show title of our web page--->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--I use these meta tag to get the meta data in the machine--->
+  <title>
+    This is the title of the website.
+  </title>
+  <!---I used this tittle tag to display the title on the tab of the web brwoser-->
+</head>
+<!---I used this inline styling properties so that with the help of this I can do styling of the class -->
+<style>
+  .edit-table {
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid black;
+  }
+  header {
+    background-color:rgb(24, 21, 39);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: rgb(103, 194, 230);
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+</style>
+<!---I used the body to show the input in the webpage.--->
+<!---in this I use different tags like h1, p..etc to show data , 
+  with the help of h1 tag I show the heading of every div. 
+  I used paragraph tag to write text in the div body. After that I use a the image tag to show the image inside the div,
+  for that I need a source url/file so i use the src tag  to display the image of the particular url. --->
+<body>
+  <h1>This is an example of div</h1>
+  <p> It is a div we use it to contain the element in it. Its a type of a container which contains all the elements and
+    tags.</p>
+  <div>
+    <h1>Yes it is the header of this div.</h1>
+    <p>this is the paragraph in this div.</p>
+    <img src="https://cdn.pixabay.com/photo/2021/10/07/17/51/door-6689322__340.png" width="100%" height="100%">
+    <p>This is the image tag in the html and it used to show the image in the webpge </p>
+  </div>
+  <hr>
+<!--I also mentioned it in p tag just below why i used hr tag -->
+  <p> we use here a hr tag to make a thematic break so that we can saw another topic in this webpage.</p>
+  <!---In this section I created a div and inside it contains a table  tag to show the table and for that table I used to 
+  create a class for it so that I can call it inside the style.-->
+  <div>
+    <h1> we use this div for showing the tables in it.</h1>
+    <table class="edit-table">
+      <tr>
+        <th>This is the heading of the table row 1</th>
+        <th>This is the heading of the table row 2</th>
+      </tr>
+      <tr>
+        <td> We created a table row & its content in it.</td>
+        <td> We created a table row & its content in it.</td>
+      </tr>
+    </table>
+  </div>
+<!--In this div I created a list which are both ordered and unordered. So that if we want to display the data in a format of list we can use this 
+html element-->
+  <div>
+    <h1>This is the list in the html</h1>
+    <ul>
+      <li>list item number 1.</li>
+      <li>list item number 2.</li>
+    </ul>
+    <ol>
+      <li>list item number 1.</li>
+      <li>list item number 2.</li>
+    </ol>
+  </div>
+<!---In this div I created a Inline-frame to show the another webpage inside the div by using a link tag which have a target 
+property and we call the name of that iframe inside that target property-->
+  <div>
+    <iframe src="first_iframe.htm" height="300px" width="50%" name="iframe_a" title="Iframe Example"></iframe>
+    <p><a href="C:\Users\Shekhar\repos\repetition-burningforthe\html-basics\html-learning.html" target="iframe_a">click
+        Me!</a></p>
+  </div>
+
+  <!---This is the layout of a html page I use header, section, navbar, article,footer to show how the layout of  webpage is look like 
+     --->
+  <div>
+    <header>
+      <h2>This is a header</h2>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Link 1</h1>
+        <p>
+          This is the main page 
+        </p>
+      </article>
+    </section>
+    
+    <footer>
+      <p>This is the Footer</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

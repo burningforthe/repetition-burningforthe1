@@ -1,0 +1,170 @@
+                                    Chapter 1: Introduction of the basic html
+
+Html is stands for Hyper Text markup language  used for creating the web pages. Web browser read these html files and display them correctly.
+Its consist of several components, series of tags and the browser renders it using these properties of the html. 
+
+
+What is a Tags in the html?
+HTML syntax is fairly simple; it all revolves around tags. A tag is used to identify data and it can be described by using this format:
+
+=> <tag></tag>
+We use these < > brackets to enclosed the tag in it, And we need to enclosed it like this </tag> 
+We can use uppercase like this: TAG  or lowercase like this: tag because HTML is not a case-sensitive.
+
+So our First Tag in the html is "<!DOCTYPE>"
+<!DOCTYPE HTML> : This tag is used to represent the HTML document to the web brwoser and display it as web page.
+<html></html> : This tag is used to represent  HTML document and it will be started from this <html> and enclosed with this </html> in the end of the web page . 
+<head> </head>: This tag is used to represent the heading of the webpage it will be started from this <head> and ends with this </head> .
+<title> </title>: This tag is used to represent the tittle  of the webpage it will be started from this <title> and ends with this </title> .
+<body></body>: This tag is used to represent the body of the webpage it will be started from this <body> and ends with this </body> .
+<p></p>: This tag is used to type paragraph in the webpage it will be started from this <p> and ends with this </p> .
+
+With this Example of the tags and basic representation of the html:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello world!</p>
+</body>
+</html>
+
+This is the basic template of the html and we use it to  display a basic webpage, In the upcoming chapter we can learn about different types of  tags
+and its elements and attributes. 
+
+                                      Chapter: 2 Elements in the html
+
+"HTML-elements": It is the another part of the basic of the Html which is very important for the structure of the html. 
+The element is like this: <tag>content</tag> this how we described an element in html for example: <p>Hello world!</p> . 
+It will show Hello world! as output in the web page. 
+
+In html we use Nested element because html contains other element. 
+Html follows a pre-defined structure in which all the elements are kept inside it.
+ 
+1.<html>:  It is the main element for the html and all the element are kept inside this element as follows.
+
+2.<head>: It contains the header and title element.
+
+3.<title>: It defines the title of the webpage.
+
+
+4.<body>: It contains all the element that help to display the webpage.
+
+There are several rules for defining the elements in the html: 
+1. It should be start with this <> and ends with </> . 
+2. It should always be lowercase for i.e: <p>, <br>...etc 
+3. It should always be closed when we decelared it. for i.e: <p> </p>, <a></a>, <div></div>..etc 
+
+With this Example of the element:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the element example</title>
+    </head>
+    <body>
+        <p>Hello<br> world!</p>
+    </body>
+</html>
+
+Here we use <p> element and <br> element  inside the body tag or we can say body element.
+
+                                    Chapter 3: Attributes in the HTML
+
+Now we know what is an Element in the html but we don't know how can we modified that element in the html for this problem we need 
+a solution which is known as an Attributes in Html.
+
+Attributes is like properties of the element or we can say it provides more information about the elements.
+There are some rules for calling the attributes inside an element:
+
+1. It always be specified/written inside the starting tag of the elements.
+for i.e: <p style="font-size: 100px;">Hello World!</p>. 
+In the above example "style" is the attributes for the <p> element which modified the "Hello World!" and increase the font-size of the "Hello World!". 
+
+2. It always comes with the predefined name and its predefined vlaues like above in the example.
+There are several pre-defined names for the attributes for i.e: 'style', 'class', 'id', 'href', 'src'...etc which we discussed later in the chapters. 
+
+3. Always quotes the Attributes.
+
+4. It should be written in lowercase.
+
+Lets take an example of <a> element where we use 'href' as attributes and discussed its functionality: 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <p>This is the example of the anchor tag where we use 'href'as attributes</p>
+        <a href="https://ryanstutorials.net/html-tutorial/html.php">Click me</a>
+    </body>
+    </html>
+    In the above example we use an <a> element and use {href} as attribute, the {href} attributes will create a hyper text link. When we click on it it will redirect us to the new web page.
+    And that is how our basic html work.
+
+Lets take another example where we use <img> as an element and <src> as an attribute :
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="https://cdn.pixabay.com/photo/2016/07/05/18/35/aircraft-1499171__340.jpg">
+    </body>
+    </html>    
+    So here we use <img> as element and <src> as attribute because we declare <img> tag for the image in the html however for this we need a source file also.
+        For that we need this {src} attribute so we can put our url/location in it.
+        
+        There are 2 type of Url/location in {src} attributes: 
+        1. Absolute Url: It is a Url in which we use external link from the another website/Internet. 
+        for example: "https://cdn.pixabay.com/photo/2016/07/05/18/35/aircraft-1499171__340.jpg
+                          
+        2. Relative Url: In this we use local storage or store image within the website. 
+        For example:C:\Users\Shekhar\repos\repetition-burningforthe\html-basics. 
+
+
+                                      Chapter 4: Headings in the HTML
+                                      
+      Till now we have discussed about many topics of the html like its basic templates, tags, elements, attribute, now I am discussng about a Headings in Html. 
+      "Heading": As per the name, we can say it as title or subtitle of any element in the HTML.
+       1. Heading tag should be specified as <h1></h1>. 
+       2. There are 6 types of the heading according there importance <h1> to <h6>. 
+       3. <h1> heading tag is the very important.
+       4. <h6> heading tag is the very least important.
+       5. With the help of heading the search engine will index the structure and content of the web page.
+    
+       With this example we can see how heading tag is used in the HTML: 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>This is the important heading tag</h1>
+        <h2>This is the less important than h1 heading tag</h2>
+        <h3>This is the less important than h2 heading tag</h3>
+        <h4>This is the less important than h3 heading tag</h4>
+        <h5>This is the less important than h4 heading tag</h5>
+        <h6>This is the least important than every heading tag</h6>
+    </body>
+    </html>
+    In this example we use heading tag and mentioned the importance in the heading tag.Just like any other element we can add attributes in it like "style", etc.
+    Here is the another example wher we can modified the heading tag:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1><a href="https://ryanstutorials.net/html-tutorial/html.php">This is the important heading tag which is clickable.</a></h1>
+        <h2 style="font-size: 200%;">This is the less important than h1 heading tag</h2>
+        <h3 style="color: blue;font-size: 200%;">This is the less important than h2 heading tag</h3>
+    </body>
+    </html>   
+In this example we use different attributes inside the heading tag like "style, href," etc. to modified the heading tag.
+
+
